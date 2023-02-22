@@ -117,7 +117,7 @@ class Board:
     def showboard(self):
         """ show the board """
         ship = "#"
-        shell = Colors.BGRED+Colors.BRIGHT+"X"+Colors.RESETALL
+        bomb = Colors.BGRED+Colors.BRIGHT+"X"+Colors.RESETALL
         startcolumn = 3
         startrow = 5
         horizontalspacer = 3
@@ -140,7 +140,8 @@ class Board:
                 if [x + 1, y + 1] in self.ships:
                     text = ship
                 # self.log.debug(
-                #     f"{x} {y} pos = {(x * horizontalspacer) + startcolumn},{(y * verticalspacer) + verticalspacer} text = [{text}]")
+                #     f"{x} {y} pos = {(x * horizontalspacer) + startcolumn},
+                # {(y * verticalspacer) + verticalspacer} text = [{text}]")
                 Colors.position((x * horizontalspacer) + startcolumn + 2,
                                 (y * verticalspacer) + verticalspacer + startrow + 2,
                                 f"{Colors.FGYELLOW + Colors.BRIGHT + text}")
