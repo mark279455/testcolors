@@ -231,7 +231,7 @@ class Board:
                 Cols.clearline(21)
                 Cols.pos(1, 21, "Make a guess: ", True)
                 Cols.pos(1, 1, "1234567890" *8)
-                for i in range(1,24):
+                for i in range(1,25):
                     Cols.pos(1, i, str(i))
                 playerinput = input("")
                 Cols.clearmessage()
